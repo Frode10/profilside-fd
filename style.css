@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color:black; /* var(--primary-color) */
+}
+html, body {
+   height:100%;  /* må være 100% for å få 100% i kolonner */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: aliceblue; */
+    position: relative;
+    font-family:sans-serif;
+    
+}
+
+
+
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Sørg for at videoen er bak annet innhold */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right:8rem;
+
+    background-color: transparent;
+    opacity: 1;
+
+    height: 8rem;
+    z-index: 99;
+    position: fixed;
+    
+    width: 100%;
+   
+}
+
+ul {
+    display: flex;
+    justify-content: center; /* Sentrerer linker horisontalt */
+    align-items: center; /* Sentrerer linker vertikalt */
+    list-style: none;
+    gap:1rem;
+   
+}
+
+li {
+    font-size: 2rem;
+    margin: 0;
+  
+}
+
+
+nav a p {
+    color:rgb(255, 155, 66); 
+    text-decoration: none;
+    font-size:2rem;
+    
+}
+
+a:hover p{
+    color:rgb(255, 177, 64);
+    scale: 1.1;
+}
+
+
+main {
+    /* background-color: orange; */
+    padding:0rem 1rem 0rem 1rem;
+  
+   
+}
+#home, #prosjekter, #kontakt {
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:9rem;
+    padding-right:2rem;
+    padding-left:2rem;
+   
+}
+
+#home {
+    background-color: transparent;
+}
+
+#prosjekter{
+    background-color: rgba(11, 79, 108, 0.934);
+}
+#kontakt {
+    background-color: rgba(43, 43, 43, 0.425);
+   
+}
+
+.hero-wrapper {
+   
+   width:90rem;
+   background-color: white;
+    /* border: 1px solid lightgrey; */
+    /* border-radius:5px; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:10px;
+
+
+
+}
+.prosjekt-wrapper {
+    width:90rem;
+    min-height:40rem;
+    
+    background-color:rgb(216, 216, 216);
+    /* border: 1px solid lightgrey; */
+    /* border-radius:5px; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:10px;
+
+    padding:3rem;
+
+
+}
+.kontakt-wrapper {
+    width:600px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+    background-color:rgb(250, 250, 250);
+   padding:3rem;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:10px;
+
+
+
+}
+
+
+h2 {
+    color:#0B4F6C;
+    font-size:3rem;
+    margin-bottom:0.7rem;
+
+}
+h3 {
+    color:#0B4F6C;
+    font-size:2rem;
+    margin-bottom:1rem;
+
+}
+
+.linker p {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-bottom:1.3rem;
+    color:rgb(255, 155, 66);
+   
+}
+p {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-bottom:1.3rem;
+   
+}
+
+.columns, .col1, .col2 {
+    height: 100%;
+}
+.columns {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* grid-template-columns: repeat(2); */
+    gap: 1rem;
+   
+    /* background-color: grey; */
+}
+
+/* Image */
+.col1 {
+    display:flex;
+    flex-direction: column;
+    justify-content:center; /* Plasserer elementene nederst */
+    align-items: center;
+background-color: transparent;
+}
+
+.col2 {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between; /* Plasserer elementene nederst */
+    padding: 2rem;
+    /* background-color: blue; */
+}
+
+
+/* linker nederst på "om meg" */
+.linker {
+    display:flex;
+    gap:2rem;
+    width:100%;
+    height:4rem;
+    background-color: rgb(11, 79, 108);
+    text-transform: uppercase;
+    padding:1rem 3rem;
+   
+    border-radius: 4px;
+    align-self: flex-end; /* Plasserer .linker nederst i .col2 */
+
+}
+
+figure img{
+    width:50%;
+    height:50%;
+    object-fit: cover;
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    /* filter: hue-rotate(0deg);  */
+   
+
+}
+
+form {
+ width:100%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(255, 177, 64);
+    color: white;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background-color:rgb(251, 190, 106);
+}
+
+
+
+footer {
+    height:40rem;
+    width:100%;
+    background-color:rgb(11, 79, 108);
+}
+
+
+
+
+
+
+.tekst-flyin {
+/* tekst flyr inn fra venstre */
+/* color:white; */
+position: absolute;
+white-space: nowrap;
+overflow: hidden;
+font-size: 24px;
+animation: flyIn 2s ease-out;
+animation-fill-mode: forwards;
+
+}
+
+@keyframes flyIn {
+from {
+    transform: translateX(-100%);
+}
+to {
+    transform: translateX(0);
+}
+}
+
+
+
+.wiggle {
+    animation: wiggle 10s infinite;
+    transform-origin: center;
+    }
+    
+
+
+@keyframes wiggle {
+0%, 100% {
+    transform: rotate(0deg);
+}
+25% {
+    transform: rotate(5deg);
+}
+50% {
+    transform: rotate(-5deg);
+}
+75% {
+    transform: rotate(5deg);
+}
+}
+
+
+@media screen and (min-width: 389px) {
+    
+   
+   
+
+    
+}
+

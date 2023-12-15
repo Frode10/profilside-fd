@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home"><p>Home</p></a>
+        </li>
+        <li>
+          <a href="#prosjekter"> <p>Prosjekter</p></a>
+        </li>
+        <li>
+          <a href="#kontakt"> <p>Kontakt</p></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home">
+        <div class="background-video">
+          <video autoplay muted loop>
+            <source src="./video/techno-dots.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="hero-wrapper">
+          <div class="columns">
+            <figure class="col1">
+              <img src="./images/jobb-bilde-900x900.jpg" alt="illustrasjon" />
+            </figure>
+            <div class="col2">
+              <article>
+                <h2>FRODE FRONTEND</h2>
+                <h3>WEBUTVIKLER</h3>
+                <p>
+                  Hei, jeg er Frode Frontend, en frontend-utvikler med en
+                  lidenskap for å skape elegante, brukervennlige og visuelt
+                  tiltalende nettsider. Med gode kunnskaper i JavaScript, HTML,
+                  og CSS, kombinert med ferdigheter i React, Tailwind, og
+                  grafisk design, er jeg dedikert til å levere enestående
+                  digitale opplevelser. Jeg har ekspertise i å bruke Tailwind og
+                  CSS for å bygge effektivt og stilrent design. Dette gjør at
+                  jeg raskt kan implementere designendringer og opprettholde en
+                  konsistent visuell identitet. Grafisk Design: Min bakgrunn
+                  innen grafisk design gir meg et øye for detaljer og estetikk.
+                  Jeg fokuserer på å skape brukervennlige, intuitive grensesnitt
+                  som ikke bare fungerer godt, men også ser fantastiske ut. Jeg
+                  er alltid åpen for å lære nye teknologier og metoder for å
+                  holde meg oppdatert med de nyeste bransjetrender. Hvis du er
+                  ute etter en frontend-utvikler som kan kombinere teknisk
+                  dyktighet med en estetisk sans, er jeg klar til å bidra til
+                  ditt neste prosjekt. La oss sammen skape noe
+                  bemerkelsesverdig!
+                </p>
+
+                <div class="linker">
+                  <a href="#prosjekter"> <p>Prosjekter</p></a>
+                  <a href="#kontakt"> <p>Kontakt</p></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="prosjekter">
+        <div class="prosjekt-wrapper">
+          <h2>PROSJEKTER</h2>
+        </div>
+      </section>
+      <section id="kontakt">
+        <div class="kontakt-wrapper">
+          <form action="#" method="post">
+            <h2>KONTAKT</h2>
+            <label for="bedrift">Bedrift:</label>
+            <input type="text" id="bedrift" name="bedrift" required />
+
+            <label for="kontaktperson">Kontaktperson:</label>
+            <input
+              type="text"
+              id="kontaktperson"
+              name="kontaktperson"
+              required
+            />
+
+            <label for="mobil">Mobil:</label>
+            <input
+              type="tel"
+              id="mobil"
+              name="mobil"
+              pattern="[0-9]{8}"
+              placeholder="12345678"
+              required
+            />
+
+            <label for="mailadresse">Mailadresse:</label>
+            <input type="email" id="mailadresse" name="mailadresse" required />
+
+            <label for="melding">Melding:</label>
+            <textarea id="melding" name="melding" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
