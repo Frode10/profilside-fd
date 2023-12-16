@@ -69,21 +69,24 @@ ul {
     justify-content: center; /* Sentrerer linker horisontalt */
     align-items: center; /* Sentrerer linker vertikalt */
     list-style: none;
-    gap:1rem;
+    gap:2rem;
    
 }
 
 li {
     font-size: 2rem;
     margin: 0;
-  
+   
 }
 
 
 nav a p {
     color:rgb(255, 155, 66); 
     text-decoration: none;
-    font-size:2rem;
+    font-size:1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     
 }
 
