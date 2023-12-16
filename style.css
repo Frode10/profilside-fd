@@ -348,7 +348,23 @@ to {
 
 @media screen and (max-width: 767px) {
    
-
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        
+        /* background-color: transparent; */
+        opacity: 1;
+    
+        height: 8rem;
+        /* z-index: 99; */
+        /* position: fixed; */
+        
+        width: 100%;
+        margin-bottom:10rem;
+       
+    }
 
     .columns {
         display:grid;
@@ -383,8 +399,10 @@ to {
   }
 
   .hero-wrapper{
-    margin-top:3rem;
+    margin-top: 7rem;;
   }
+
+  
    
 
     
