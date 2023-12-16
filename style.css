@@ -122,34 +122,26 @@ main {
    
 }
 
-.hero-wrapper {
-   
-   width:90rem;
-   background-color: white;
-    /* border: 1px solid lightgrey; */
-    /* border-radius:5px; */
+.hero-wrapper, .prosjekt-wrapper,.kontakt-wrapper {
+    border-radius:8px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius:10px;
-
-
-
+    padding:3rem;
 }
+
+.hero-wrapper{
+   padding:0; /* padding 3rem på andre bokser, denne spesielt orem */
+   width:90rem;
+   
+}
+
 .prosjekt-wrapper {
     width:90rem;
     min-height:40rem;
     
     background-color:rgb(216, 216, 216);
-    /* border: 1px solid lightgrey; */
-    /* border-radius:5px; */
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius:10px;
-
-    padding:3rem;
-
-
 }
 .kontakt-wrapper {
-    width:600px;
+    width:60rem;
 
     display:flex;
     justify-content: center;
@@ -157,10 +149,10 @@ main {
    
    
     background-color:rgb(250, 250, 250);
-   padding:3rem;
 
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius:10px;
+
+   
+   
 
 
 
@@ -196,6 +188,8 @@ p {
 
 .columns, .col1, .col2 {
     height: 100%;
+    
+   
 }
 .columns {
     display:grid;
@@ -208,11 +202,14 @@ p {
 
 /* Image */
 .col1 {
+    background-color: rgba(11, 79, 108, 0.66);
     display:flex;
     flex-direction: column;
     justify-content:center; /* Plasserer elementene nederst */
     align-items: center;
-background-color: transparent;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+/* background-color: transparent; */
 }
 
 .col2 {
@@ -221,6 +218,9 @@ background-color: transparent;
     justify-content:space-between; /* Plasserer elementene nederst */
     padding: 2rem;
     /* background-color: blue; */
+    background-color: aliceblue;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
 }
 
 
@@ -243,6 +243,7 @@ figure img{
     width:50%;
     height:50%;
     object-fit: cover;
+    border-radius:4px;
     /* border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; */
     /* filter: hue-rotate(0deg);  */
@@ -381,9 +382,10 @@ to {
     }
 
     figure img{
-        width:90%;
+        max-width:70%;
         height:70%;
         object-fit: cover;
+        
         /* border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; */
         /* filter: hue-rotate(0deg);  */
