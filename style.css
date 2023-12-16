@@ -49,67 +49,58 @@ video {
 
 nav {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
-    padding-right:8rem;
-
+    padding-right: 8rem;
     background-color: transparent;
     opacity: 1;
-
     height: 8rem;
     z-index: 99;
     position: fixed;
-    
     width: 100%;
-   
-}
+  }
 
-ul {
+  ul {
     display: flex;
-    justify-content: center; /* Sentrerer linker horisontalt */
-    align-items: center; /* Sentrerer linker vertikalt */
-    list-style: none;
-    gap: 0.5rem;
-   
-   
-}
-
-li {
-   
-   
-    background-color: rgba(7, 51, 70, 0.934);
-    padding:1rem 3rem;
-    border-radius: 6px;
-  
-}
-
-li:hover {
-    display: inline-block;
-    background-color: rgba(15, 113, 154, 0.934);
-    cursor: pointer;
-}
-
-
-nav a {
-   
-    display:flex;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 155, 66); 
+    list-style: none;
+    gap: 0.5rem;
+  }
+
+  li {
+    background-color: rgba(7, 51, 70, 0.934);
+    padding: 1rem 3rem;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  li:hover {
+    background-color: rgba(15, 113, 154, 0.934);
+    cursor: pointer;
+  }
+
+  a {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 155, 66);
     text-decoration: none;
-    font-size:1.7rem;
+    font-size: 1.7rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
-   
-    
-}
+  }
 
-a:hover p{
-    color:rgb(255, 177, 64);
+  a:hover {
+    color: rgb(255, 177, 64);
     scale: 1.1;
-    
-}
+  }
+
+  li:active {
+    background-color: red;
+  }
 
 
 main {
