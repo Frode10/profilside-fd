@@ -347,7 +347,9 @@ to {
 
 
 @media screen and (max-width: 389px) {
-    
+   
+
+
     .columns {
         display:grid;
         grid-template-columns: 1fr;
@@ -367,6 +369,22 @@ to {
        
     
     }
+
+    #home, #prosjekter, #kontakt {
+        height:100%;
+        padding: 2rem;
+        background-color: transparent;
+    }
+
+    .hero-wrapper, .prosjekt-wrapper, .kontakt-wrapper {
+         width:100%;
+     height:100%;
+     margin-bottom:1rem;
+  }
+
+  .hero-wrapper{
+    margin-top:3rem;
+  }
    
 
     
