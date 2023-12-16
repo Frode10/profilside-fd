@@ -84,11 +84,14 @@ li {
 }
 
 li:hover {
+    display: inline-block;
     background-color: rgba(15, 113, 154, 0.934);
+    cursor: pointer;
 }
 
 
 nav a {
+   
     display:flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +101,7 @@ nav a {
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
+   
     
 }
 
