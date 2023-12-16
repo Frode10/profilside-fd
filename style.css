@@ -348,7 +348,12 @@ to {
 
 @media screen and (max-width: 767px) {
    
+    
+
     nav {
+        position:absolute;
+        bottom:0px;
+        left:0px;
         background-color: black;
         display: flex;
         justify-content: center; 
@@ -358,11 +363,11 @@ to {
         opacity: 1;
     
         height: 8rem;
-        /* z-index: 99; */
-        /* position: fixed; */
+        z-index: 99;
+        position: fixed;
         
         width: 100%;
-        margin-bottom:10rem;
+       
        
     }
 
@@ -399,7 +404,7 @@ to {
   }
 
   .hero-wrapper{
-    margin-top: 7rem;;
+    margin-top: 1rem;;
   }
 
   
