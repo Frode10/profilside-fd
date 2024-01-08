@@ -70,7 +70,7 @@ nav {
 
   li {
     background-color: rgba(7, 51, 70, 0.934);
-    padding: 1rem 3rem;
+    padding: 1rem 1.8rem;
     border-radius: 6px;
     position: relative;
   }
@@ -87,7 +87,7 @@ nav {
     align-items: center;
     color: rgb(255, 155, 66);
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -143,11 +143,25 @@ main {
 }
 
 .prosjekt-wrapper {
+    display:flex;
+    
+    flex-wrap:wrap;
+    gap:1rem;
+    
+
     width:90rem;
     min-height:40rem;
     
     background-color:rgb(216, 216, 216);
 }
+
+div{
+    background-color: rgb(79, 59, 59);
+    padding:1rem;
+    width:100%;
+
+}
+
 .kontakt-wrapper {
     width:60rem;
 
