@@ -144,7 +144,6 @@ main {
 /* PROSJEKTER SECTION */
 .prosjekt-container {
    max-width:1280px;
-   max-height: 100vh;
    background-color:#0B4F6C;
   }
   
@@ -152,8 +151,6 @@ main {
    display:grid;
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    gap:2rem;
-   max-height: 95vh;
-
 
   }
   
@@ -243,7 +240,7 @@ p {
     /* background-color: grey; */
 }
 
-/* Image */
+/* Image hero 01*/
 .col1 {
     background-color: rgba(11, 79, 108, 0.66);
     display:flex;
@@ -255,6 +252,7 @@ p {
 /* background-color: transparent; */
 }
 
+/* hero 01 */
 .col2 {
     display:flex;
     flex-direction: column;
@@ -334,10 +332,25 @@ button:hover {
 
 
 footer {
+display:grid;
+    justify-content: center;
+    align-items: center;
     height:40rem;
     width:100%;
     background-color:rgb(11, 79, 108);
+    
 }
+
+.linker-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.linker-footer a{
+   font-size:3rem;
+   color:white;
+}
+
 
 
 
@@ -453,14 +466,14 @@ to {
 
     #home, #prosjekter, #kontakt {
         height:100%;
-        padding: 2rem;
+        padding: 1rem;
         background-color: transparent;
     }
 
     .hero-wrapper, .prosjekt-wrapper, .kontakt-wrapper {
-         width:100%;
-     height:100%;
-     margin-bottom:1rem;
+        width:100%;
+        height:100%;
+        margin-bottom:1rem;
   }
 
   .hero-wrapper{
