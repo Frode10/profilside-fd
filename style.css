@@ -449,8 +449,6 @@ to {
         border-radius:8px;
     }
 
-
-
     figure img{
         max-width:150px;
         height:150px;
@@ -477,12 +475,7 @@ to {
   }
 
   .hero-wrapper{
-    margin-top: 1rem;;
+    margin-top: 1rem;
   }
-
-  
-   
-
-    
 }
 
