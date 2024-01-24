@@ -43,6 +43,21 @@ video {
 
 
 
+.hidden {
+    display: none;
+  }
+  
+  .toggle-container {
+    padding:2rem;
+    background-color: rgb(207, 148, 148);
+  }
+
+  #content1 {
+    padding:3rem;
+    background-color: aquamarine;
+    
+  }
+
 
 
 
@@ -52,11 +67,11 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding-right: 8rem;
-    background-color: transparent;
+    background-color: lightblue;
     opacity: 1;
     height: 8rem;
-    z-index: 99;
-    position: fixed;
+    /* z-index: 99; */
+    /* position: fixed; */
     width: 100%;
   }
 
@@ -95,18 +110,14 @@ nav {
     background-color: red;
   }
 
-
-
-
-
-
 main {
-    /* background-color: orange; */
-    padding:0rem 1rem 0rem 1rem;
+    background-color: transparent;
+    /* padding:0rem 1rem 0rem 1rem; */
   
    
 }
-#home, #prosjekter, #kontakt {
+/* projekter er definert for selgselv da den har mer enn 100vh */
+#home, #kontakt {
     height:100vh;
     display:flex;
     justify-content: center;
@@ -116,22 +127,30 @@ main {
 }
 
 #home {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.902);
 }
 
 #prosjekter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 /* background-color: rgb(186, 90, 49); */
-    background-color: rgba(11, 79, 108, 0.934);
+    /* background-color: rgba(11, 79, 108, 0.934); */
+    background-color: rgb(255, 255, 255);
+    padding-top:5%;
+    padding-bottom:5%;
+
+
 }
 #kontakt {
     /* background-color: rgb(186, 90, 49,0.90) */
     /* background-color: rgba(1, 112, 116, 0.85) */
-    /* background-color: rgba(0, 0, 0, 0.85); */
+    background-color: rgba(255, 255, 255, 0.90);
    
 }
 
-.hero-wrapper, .prosjekt-wrapper,.kontakt-wrapper {
-    border-radius:8px;
+.hero-wrapper, .prosjekt-wrapper, .kontakt-wrapper {
+    border-radius:4px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding:3rem;
 }
@@ -144,30 +163,61 @@ main {
 
 /* PROSJEKTER SECTION */
 .prosjekt-container {
+    display:flex;
+    justify-content: center;
    max-width:1280px;
-   background-color:#0B4F6C;
+   /* background-color:#0B4F6C; */
+   background-color: rgba(255, 255, 255, 0.90);
+   padding:1rem;
+   border-radius: 4px;
+
   }
   
   .prosjekt-wrapper {
    display:grid;
    grid-template-columns: repeat(auto-fill, minmax(100px, 32%));
-   gap:2rem;
-   max-height: 95vh;
+   gap:1rem;
+   /* max-height: 75vh; */
    overflow:scroll;
-   padding:2rem;
+   padding:1rem;
+   background-color: white;
    
 
   }
   
-  .card {
+  div.card {
     
-    background-color: rgb(255, 250, 254);
+
+
+    background-color: rgb(245, 245, 245);
     padding:1rem;
     border-radius: 4px;
   }
 
+  div.card:hover {
+    
+
+
+    background-color: rgb(216, 253, 221);
+    padding:1rem;
+    border-radius: 4px;
+  }
+
+  div.card p {
+    display:grid;
+    grid-template-columns: 1fr; /* owl spacing */
+
+align-items: center;
+    /* background-color: rgb(237, 237, 237); */
+    padding:1rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+
+ 
+
   .img-wrapper {
-  
+  min-height: 305px;
    
   }
   
@@ -182,9 +232,9 @@ main {
   
   }
   
-  img:hover {
+  /* img:hover {
     filter: brightness(90%);
-  }
+  } */
 
 
 
@@ -256,7 +306,6 @@ p {
     align-items: center;
     border-top-left-radius:8px;
     border-bottom-left-radius:8px;
-/* background-color: transparent; */
 }
 
 /* hero 01 */
